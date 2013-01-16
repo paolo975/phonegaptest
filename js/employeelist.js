@@ -35,7 +35,7 @@ function getEmployees_success(tx, results) {
     var len = results.rows.length;
     for (var i=0; i<len; i++) {
     	var employee = results.rows.item(i);
-		$('#employeeList').append('<li><a href="employeedetails.html?id=' + employee.id + '">' +
+		$('#employeeList').append('<li><a href="employeedetails.html">' +
 				'<img src="pics/' + employee.picture + '" class="list-icon"/>' +
 				'<p class="line1">' + employee.firstName + ' ' + employee.lastName + '</p>' +
 				'<p class="line2">' + employee.title + '</p>' +
