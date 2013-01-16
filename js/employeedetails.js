@@ -1,6 +1,6 @@
 var scroll = new iScroll('wrapper', { vScrollbar: false, hScrollbar:false, hScroll: false });
 
-var id = getUrlVars()["id"];
+var id =1;
 
 var db;
 
