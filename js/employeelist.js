@@ -3,7 +3,10 @@ var dbCreated = false;
 
 var scroll = new iScroll('wrapper', { vScrollbar: false, hScrollbar:false, hScroll: false });
 
-document.addEventListener("deviceready", onDeviceReady, false);
+$(document).ready(function() {
+  // Handler for .ready() called.
+  document.addEventListener("deviceready", onDeviceReady, true);
+});
 
 function onDeviceReady() {
     db = window.openDatabase("EmployeeDirectoryDB", "1.0", "PhoneGap Demo", 200000);
